@@ -1,0 +1,14 @@
+::ng-deep .mat-form-field-wrapper {
+	padding-bottom: 0;
+}
+
+.mat-dialog-content {
+	max-height: none;
+    overflow: visible;
+}
+
+button {
+	flex: 1;
+	background: #F4F6F8;
+	border: 1px solid #C4CDD5;
+}

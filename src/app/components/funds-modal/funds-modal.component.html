@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>{{ title }}</h1>
+<div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+            <mat-label>Funds</mat-label>
+            <input matInput type="number" name="funds" formControlName="funds">
+            <mat-icon matSuffix>euro</mat-icon>
+        </mat-form-field>
+        <div mat-dialog-actions>
+            <button mat-raised-button class="cancel-btn" type="button" (click)="onClose()">Cancel</button>
+            <button mat-raised-button class="save-btn">Save</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+.toolbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: white;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+mat-icon {
+    margin-right: 6px;
+}
+
+.menu-icon {
+    transform: scale(.75);
+}

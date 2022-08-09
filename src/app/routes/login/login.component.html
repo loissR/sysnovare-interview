@@ -1,0 +1,23 @@
+<mat-card class="card">
+    <div class="card-header">
+        <h3 class="card-title">Login</h3>
+    </div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+            <mat-label>Email Address</mat-label>
+            <input matInput name="email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="form-password-input">
+            <mat-label>Password</mat-label>
+            <input matInput [type]="showPassword ? 'text' : 'password'" name="password" formControlName="password">
+            <mat-icon *ngIf="showPassword; else visibility" matSuffix (click)="onShowPassword()">visibility_off</mat-icon>
+            <ng-template #visibility matSuffix>
+                <mat-icon (click)="onShowPassword()">visibility</mat-icon>
+            </ng-template>
+        </mat-form-field>
+        <div class="link">
+            <a href="#">Don't have an account?</a>
+        </div>
+        <button mat-raised-button>Login</button>
+    </form>
+</mat-card>
